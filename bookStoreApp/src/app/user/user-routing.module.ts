@@ -4,12 +4,10 @@ import { AddBookComponent } from './components/add-book/add-book.component';
 import { DeleteBookComponent } from './components/delete-book/delete-book.component';
 import { UserComponent } from './user.component';
 
-const routes: Routes = [{
-  path: 'user', component: UserComponent, children: [
+const routes: Routes = [
     { path: 'add-book', component: AddBookComponent },
-    { path: 'delete-book', component: DeleteBookComponent }
-  ]
-}];
+    { path: ':id/delete-book', component: DeleteBookComponent }
+  ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

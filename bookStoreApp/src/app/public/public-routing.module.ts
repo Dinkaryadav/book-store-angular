@@ -6,12 +6,10 @@ import { PublicComponent } from './public.component';
 
 
 
-const routes: Routes = [{
-  path: 'public', component: PublicComponent, children: [
-    { path: 'all-books', component: AllBooksComponent },
-    { path: 'book-details/:id/author/:authorId', component: BookDetailsComponent }
-  ]
-}];
+const routes: Routes = [
+    { path: '', component: AllBooksComponent },
+    { path: ':id', component: BookDetailsComponent }
+  ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
