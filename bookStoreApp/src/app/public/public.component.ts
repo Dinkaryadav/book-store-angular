@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Bookmodel } from './models/book.model';
+import { PublicService } from './services/public.service';
 
 @Component({
   selector: 'app-public',
@@ -7,11 +9,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./public.component.css']
 })
 export class PublicComponent implements OnInit {
-  bookId: number=12;
-  authorId: number=110;
-  constructor() { }
+ 
+ 
+  constructor() {    
+   }
 
   ngOnInit(): void {
+    
   }
 
 }

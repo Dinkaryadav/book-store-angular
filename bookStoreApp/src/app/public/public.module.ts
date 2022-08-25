@@ -4,6 +4,9 @@ import { AllBooksComponent } from './components/all-books/all-books.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
 import { PublicRoutingModule } from './public-routing.module';
 import { PublicComponent } from './public.component';
+import { PublicService } from './services/public.service';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -15,7 +18,9 @@ import { PublicComponent } from './public.component';
   ],
   imports: [
     CommonModule,
-    PublicRoutingModule
+    PublicRoutingModule,
+    MatCardModule,
+    MatButtonModule
   ]
 })
 export class PublicModule { }
